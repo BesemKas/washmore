@@ -1,0 +1,218 @@
+/* Define custom properties for light and dark mode colors */
+:root {
+    --heading1-color-light: #3e3f40; /* Light mode color for h1 */
+    --heading1-color-dark: #58595a;  /* Dark mode color for h1 */
+    
+    --heading2-color-light: #3e3f40; /* Light mode color for h2 */
+    --heading2-color-dark: #cfcfcf;  /* Dark mode color for h2 */
+
+    --heading3-color-light: #4a5568; /* Light mode color for h3 */
+    --heading3-color-dark: #cbd5e0;  /* Dark mode color for h3 */
+
+    --heading4-color-light: #3e3f40; /* Light mode color for h4 */
+    --heading4-color-dark: #c5c5c5;  /* Dark mode color for h4 */
+
+    --heading5-color-light: #a0aec0; /* Light mode color for h5 */
+    --heading5-color-dark: #999999;  /* Dark mode color for h5 */
+
+    --heading6-color-light: #58595a; /* Light mode color for h6 */
+    --heading6-color-dark: #a7a7a7;  /* Dark mode color for h6 */
+
+    --paragraph-color-light: #4a5568; /* Light mode paragraph color */
+    --paragraph-color-dark: #dbdbdb;  /* Dark mode paragraph color */
+
+    --link-color-light: #3182ce; /* Light mode link color */
+    --link-color-dark: #63b3ed;  /* Dark mode link color */
+
+    /*button-font-color for class='btn'*/
+    --button-color-light: #ffffff; /* Light mode button color */
+    --button-color-dark: #ffffff;  /* Dark mode button color */
+
+    /*button-background-color for class='btn'*/
+    --button-background-color-light: #29a7d7; /* Light mode button background color */
+    --button-background-color-dark: #29a7d7;  /* Dark mode button background color */
+
+
+    /*Banner colors*/
+    --heading1-banner-color-light: #f5f5f5; /* Light mode color for h1 banner */
+    --heading1-banner-color-dark: #f7fafc;  /* Dark mode color for h1 banner */
+    --heading4-banner-color-light: #f5f5f5; /* Light mode color for h2 banner */
+    --heading4-banner-color-dark: #f7fafc;  /* Dark mode color for h4 banner */
+
+    /*icon color for class='about-icon'*/
+    --about-icon-color-light: #3182ce; /* Light mode icon color */
+    --about-icon-color-dark: #63b3ed;  /* Dark mode icon color */
+
+    /*pricing block colours*/
+    --pricing-block-bg-color-light: #ffffff; /* Light mode pricing block background color */
+    --pricing-block-bg-color-dark: #35aeff;  /* Dark mode pricing block background color */
+
+    --pricing-block-border-color-light: #c4c4c4; /* Light mode pricing block border color */
+    --pricing-block-border-color-dark: #525252;  /* Dark mode pricing block border color */
+    
+    --pricing-block-main-border-color-light: #29a7d7; /* Light mode pricing block main border color */
+    --pricing-block-main-border-color-dark: #29a7d7;  /* Dark mode pricing block main border color */
+}
+
+/* Apply light mode colors by default */
+:root {
+    --heading1-color: var(--heading1-color-light);
+    --heading2-color: var(--heading2-color-light);
+    --heading3-color: var(--heading3-color-light);
+    --heading4-color: var(--heading4-color-light);
+    --heading5-color: var(--heading5-color-light);
+    --heading6-color: var(--heading6-color-light);
+    --paragraph-color: var(--paragraph-color-light);
+    --link-color: var(--link-color-light);
+    --button-color: var(--button-color-light);
+    --button-background-color: var(--button-background-color-light);
+    --heading1-banner-color: var(--heading1-banner-color-light);
+    --heading4-banner-color: var(--heading4-banner-color-light);
+    --about-icon-color: var(--about-icon-color-light);
+    --pricing-block-bg-color: var(--pricing-block-bg-color-light);
+    --pricing-block-border-color: var(--pricing-block-border-color-light);
+    --pricing-block-main-border-color: var(--pricing-block-main-border-color-light);
+}
+
+/* Apply dark mode colors using media queries */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --heading1-color: var(--heading1-color-dark);
+        --heading2-color: var(--heading2-color-dark);
+        --heading3-color: var(--heading3-color-dark);
+        --heading4-color: var(--heading4-color-dark);
+        --heading5-color: var(--heading5-color-dark);
+        --heading6-color: var(--heading6-color-dark);
+        --paragraph-color: var(--paragraph-color-dark);
+        --link-color: var(--link-color-dark);
+        --button-color: var(--button-color-dark);
+        --button-background-color: var(--button-background-color-dark);
+        --heading1-banner-color: var(--heading1-banner-color-dark);
+        --heading4-banner-color: var(--heading4-banner-color-dark);
+        --about-icon-color: var(--about-icon-color-dark);
+        --pricing-block-bg-color: var(--pricing-block-bg-color-dark);
+        --pricing-block-border-color: var(--pricing-block-border-color-dark);
+        --pricing-block-main-border-color: var(--pricing-block-main-border-color-dark);
+    }
+}
+
+/* Custom styles for headings */
+h1 {
+    color: var(--heading1-color);
+    font-size: 2.25rem; 
+    font-weight: 700; 
+}
+
+h2.contactDetailsHeading{
+    color: var(--heading2-color);
+    font-size: 1.3rem; 
+    font-weight:400;
+    
+}
+p.contactDetails{
+    color: var(--paragraph-color);
+    font-size: 1.2rem; 
+    line-height: 1.75rem; 
+}
+
+h2.blockTitle {
+    color: var(--heading2-color);
+    font-size: 2.25rem; 
+    font-weight:600;
+    
+}
+
+h3 {
+    color: var(--heading3-color);
+    font-size: 1.75rem; 
+    font-weight: 700; 
+    
+}
+
+h4 {
+    color: var(--heading4-color);
+    font-size: 1.5rem; 
+    font-weight: 700; 
+}
+
+h5 {
+    color: var(--heading5-color);
+    font-size: 1.25rem; 
+    font-weight: 700; 
+}
+
+h6 {
+    color: var(--heading6-color);
+    font-size: 1rem; 
+    font-weight: 700; 
+}
+
+/* Custom styles for paragraphs */
+p {
+    color: var(--paragraph-color);
+    
+    font-size: 1.225rem; 
+    line-height: 1.75rem; 
+}
+
+/* Custom styles for links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-color);
+}
+
+span.btn-text {
+    color: var(--button-color);
+}
+span.about-icon {
+    background-color: var(--about-icon-color);
+}
+button.btn {
+    background-color: var(--button-background-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+h1.banner {
+    color: var(--heading1-banner-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h4.banner {
+    color: var(--heading4-banner-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+div.pricing-block, div.pricing-block-main {
+    background-color: var(--pricing-block-bg-color);
+    border: 1px solid var(--pricing-block-border-color);
+
+
+    a.startBtn {
+        background-color: var(--button-background-color);
+        color: white;
+        border-radius: 6px;
+        font-weight: 700;
+    }
+}
+
+
+
+div.pricing-block-main {
+    border: 5px solid var(--pricing-block-main-border-color);
+
+    a.startBtn {
+        background-color: white;
+        color: var(--button-background-color);
+        border-color: var(--button-background-color);
+    }
+}
