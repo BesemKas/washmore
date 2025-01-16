@@ -14,6 +14,10 @@ Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
 
+Route::get('/services', function () {
+    return view('services');
+})->name('services');
+
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');

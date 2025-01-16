@@ -37,6 +37,23 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->role === 'admin';
     }
 
+    public function shoppingCart() {
+        return $this->hasOne(ShoppingCart::class);
+    }
+
+    public function payments() {
+        return $this->hasMany(Payment::class);
+    }
+
+    public function orders() {
+        return $this->hasMany(ShopOrder::class);
+    }
+
+    public function subscriptions() {
+        return $this->hasOne(Subscription::class);
+    }
+
+
     /**
      * Get the attributes that should be cast.
      *

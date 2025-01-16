@@ -6,8 +6,11 @@
     --heading2-color-light: #3e3f40; /* Light mode color for h2 */
     --heading2-color-dark: #cfcfcf;  /* Dark mode color for h2 */
 
-    --heading3-color-light: #4a5568; /* Light mode color for h3 */
-    --heading3-color-dark: #cbd5e0;  /* Dark mode color for h3 */
+    --heading3-color-light: #3e3f40; /* Light mode color for h3 */
+    --heading3-color-dark: #58595a;  /* Dark mode color for h3 */
+
+    --heading3-subtitle-color-light: #4a5568; /* Light mode color for h3 */
+    --heading3-subtitle-color-dark: #cbd5e0;  /* Dark mode color for h3 */
 
     --heading4-color-light: #3e3f40; /* Light mode color for h4 */
     --heading4-color-dark: #c5c5c5;  /* Dark mode color for h4 */
@@ -72,6 +75,7 @@
     --pricing-block-bg-color: var(--pricing-block-bg-color-light);
     --pricing-block-border-color: var(--pricing-block-border-color-light);
     --pricing-block-main-border-color: var(--pricing-block-main-border-color-light);
+    --heading3-subtitle-color: var(--heading3-subtitle-color-light);
 }
 
 /* Apply dark mode colors using media queries */
@@ -93,6 +97,7 @@
         --pricing-block-bg-color: var(--pricing-block-bg-color-dark);
         --pricing-block-border-color: var(--pricing-block-border-color-dark);
         --pricing-block-main-border-color: var(--pricing-block-main-border-color-dark);
+        --heading3-subtitle-color: var(--heading3-subtitle-color-dark);
     }
 }
 
@@ -103,17 +108,8 @@ h1 {
     font-weight: 700; 
 }
 
-h2.contactDetailsHeading{
-    color: var(--heading2-color);
-    font-size: 1.3rem; 
-    font-weight:400;
-    
-}
-p.contactDetails{
-    color: var(--paragraph-color);
-    font-size: 1.2rem; 
-    line-height: 1.75rem; 
-}
+
+
 
 h2.blockTitle {
     color: var(--heading2-color);
@@ -122,8 +118,14 @@ h2.blockTitle {
     
 }
 
-h3 {
+h3.blockTitle {
     color: var(--heading3-color);
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    
+}
+h3.subtitle{
+    color: var(--heading3-subtitle-color);
     font-size: 1.75rem; 
     font-weight: 700; 
     
@@ -168,11 +170,13 @@ a:hover {
 span.btn-text {
     color: var(--button-color);
 }
-span.about-icon {
+span.icon {
     background-color: var(--about-icon-color);
+    color: white;
 }
-button.btn {
+.btn {
     background-color: var(--button-background-color);
+    color: var(--button-color);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;

@@ -1,8 +1,8 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl  leading-tight">
+        <h3 class="font-semibold text-xl  leading-tight">
             {{ __('Home') }}
-        </h2>
+        </h3>
     </x-slot>
 
 
@@ -44,8 +44,8 @@
                 <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
                     <div class="w-full flex-col justify-center items-start gap-8 flex">
                         <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                            <h2 class=" blockTitle text-4xl lg:text-start text-center">
-                                Why choose us?</h2>
+                            <h3 class=" blockTitle text-4xl lg:text-start text-center">
+                                Why choose us?</h3>
                             <p class=" font-normal leading-relaxed lg:text-start text-center">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facilis nulla alias
                                 saepe. Commodi deserunt mollitia minima omnis quidem obcaecati, dolorem soluta,
@@ -88,15 +88,15 @@
 
                         <div>
                             <div>
-                                <span class=" about-icon flex h-12 w-12 items-center justify-center rounded-xl">
+                                <span class="icon flex h-12 w-12 items-center justify-center rounded-xl">
                                     ICON HERE
                                 </span>
                             </div>
 
                             <div class="mt-6">
-                                <h2 class=" blockTitle text-3xl tracking-tight">
+                                <h3 class=" blockTitle text-3xl tracking-tight">
                                     Our Membership model:
-                                </h2>
+                                </h3>
                                 <p class="mt-4">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. In unde deserunt
                                     repudiandae debitis aut? Eveniet consequatur laboriosam vitae consectetur
@@ -123,14 +123,14 @@
                     <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
                         <div>
                             <div>
-                                <span class="about-icon flex h-12 w-12 items-center justify-center rounded-xl ">
+                                <span class="icon flex h-12 w-12 items-center justify-center rounded-xl ">
                                     ICON HERE
                                 </span>
                             </div>
                             <div class="mt-6">
-                                <h2 class="blockTitle text-3xl tracking-tight ">
+                                <h3 class="blockTitle text-3xl tracking-tight ">
                                     Membership Benefits:
-                                </h2>
+                                </h3>
                                 <p class="mt-4">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus adipisci eum sint,
                                     eaque aspernatur consectetur corporis odit quibusdam ducimus quis magnam neque
@@ -157,14 +157,14 @@
                     <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
                         <div>
                             <div>
-                                <span class="about-icon flex h-12 w-12 items-center justify-center rounded-xl">
+                                <span class="icon flex h-12 w-12 items-center justify-center rounded-xl">
                                     ICON HERE
                                 </span>
                             </div>
                             <div class="mt-6">
-                                <h2 class="blockTitle text-3xl  tracking-tight">
+                                <h3 class="blockTitle text-3xl  tracking-tight">
                                     Skip the Queue:
-                                </h2>
+                                </h3>
                                 <p class="mt-4 ">
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero cupiditate quidem
                                     nobis consectetur, quasi magnam quibusdam optio dolorum, asperiores ab sunt quaerat
@@ -193,10 +193,10 @@
         <div class="box-border px-4 mx-auto border-solid sm:px-6 md:px-6 lg:px-0 max-w-7xl">
 
             <div class="flex flex-col items-center leading-7 text-center border-gray-200">
-                <h2 id="pricing"
+                <h3 id="pricing"
                     class="box-border m-0 text-3xl font-semibold leading-tight tracking-tight border-solid sm:text-4xl md:text-5xl">
                     Membership Plans
-                </h2>
+                </h3>
                 <p class="box-border mt-2 text-xl  border-solid sm:text-2xl">
                 </p>
             </div>
@@ -425,7 +425,7 @@
     <section class="">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
             <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl blockTitle ">Visit Our Location</h2>
+                <h3 class="text-3xl blockTitle ">Visit Our Location</h3>
                 <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="mt-16 lg:mt-20">
@@ -439,19 +439,19 @@
                     <div>
                         <div class="max-w-full mx-auto rounded-lg overflow-hidden">
                             <div class="px-6 py-4">
-                                <h2 class="contactDetailsHeading ">Our Address</h2>
-                                <p class="contactDetails mt-1 ">12 wash st</p>
+                                <h3 class="blockTitle ">Our Address</h3>
+                                <p class=" mt-1 ">12 wash st</p>
                             </div>
                             <div class="border-t border-gray-200 px-6 py-4">
-                                <h2 class="contactDetailsHeading ">Hours</h2>
-                                <p class="contactDetails mt-1 ">Monday - Friday: 9am - 5pm</p>
-                                <p class="contactDetails mt-1 ">Saturday: 10am - 4pm</p>
-                                <p class="contactDetails mt-1 ">Sunday: Closed</p>
+                                <h3 class="blockTitle ">Hours</h3>
+                                <p class=" mt-1 ">Monday - Friday: 9am - 5pm</p>
+                                <p class=" mt-1 ">Saturday: 10am - 4pm</p>
+                                <p class=" mt-1 ">Sunday: Closed</p>
                             </div>
                             <div class="border-t border-gray-200 px-6 py-4">
-                                <h2 class="contactDetailsHeading ">Contact</h2>
-                                <p class="contactDetails mt-1 ">Email: info@example.com</p>
-                                <p class="contactDetails mt-1 ">Phone: +1 23494 34993</p>
+                                <h3 class="blockTitle ">Contact</h3>
+                                <p class=" mt-1 ">Email: info@example.com</p>
+                                <p class=" mt-1 ">Phone: +1 23494 34993</p>
                             </div>
                         </div>
                     </div>

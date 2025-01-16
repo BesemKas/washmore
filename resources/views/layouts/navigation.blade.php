@@ -21,6 +21,10 @@
                         <x-nav-link :href="route('shop')" :active="request()->routeIs('shop')">
                             {{ __('Shop') }}
                         </x-nav-link>
+                        <x-nav-link :href="route('services')" :active="request()->routeIs('services')">
+                            {{ __('Services') }}
+                        </x-nav-link>
+                        
                         <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
                             {{ __('Contact') }}
                         </x-nav-link>
