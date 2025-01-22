@@ -14,10 +14,11 @@ return new class extends Migration
         Schema::create('subscription_plans', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->text('description')->nullable();
             $table->integer('garage_slots')->nullable();
-            $table->decimal('anual_cost', 5, 2);
-            $table->decimal('shop_discount', 5, 2)->default(0); // Precision 5, scale 2
-            $table->decimal('service_discount', 5, 2)->default(0); // Precision 5, scale 2
+            $table->decimal('anual_cost', 7, 2);
+            $table->integer('shop_discount')->nullable();
+            $table->integer('service_discount')->nullable(); 
 
             $table->timestamps();
         });

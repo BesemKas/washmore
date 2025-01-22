@@ -5,6 +5,10 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\SubscriptionPlan;
+use App\Models\Subscription;
+
+use function Pest\Laravel\call;
 
 class DatabaseSeeder extends Seeder
 {
@@ -26,5 +30,10 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@example.com',
             'role' => 'admin',
         ]);
+
+        // $this->call([
+        //     SubscriptionPlanSeeder::class,
+            
+        // ]);
     }
 }

@@ -18,10 +18,11 @@ class SubscriptionPlanFactory extends Factory
     {
         return [
             'name' => $this->faker->word,
-            'anual_cost' => $this->faker->randomFloat(2, 1, 1000),
+            'description' => $this->faker->sentence,
+            'anual_cost' => $this->faker->randomFloat(2, 1, 10000),
             'garage_slots' => $this->faker->numberBetween(1, 10),
-            'shop_discount' => $this->faker->randomFloat(2, 0, 100), // Correct method name for percentage between 0 and 100
-            'service_discount' => $this->faker->randomFloat(2, 0, 100), // Correct method name for percentage between 0 and 100
+            'shop_discount' => $this->faker->numberBetween(0,16), // Correct method name for percentage between 0 and 100
+            'service_discount' => $this->faker->numberBetween(0,16), // Correct method name for percentage between 0 and 100
         ];
     }
 }
