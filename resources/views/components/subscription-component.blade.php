@@ -65,5 +65,9 @@
             <span>Free updates: <span class="font-semibold">6 months</span></span>
         </li>
     </ul>
-    <x-Primary-button class="w-full" wire:click="subscribe">Subscribe</x-Primary-button>
+    <form action="{{ route('subscribe', $planToShow->id) }}" method="POST">
+        @csrf
+        <x-Primary-button class="w-full">Subscribe</x-Primary-button>
+    </form>
+    
 </div>

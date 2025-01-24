@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Subscription;
 use App\Models\User;
 use App\Models\SubscriptionPlan;
+use Illuminate\Support\Facades\Auth;
 
 class SubscriptionController extends Controller
 {
@@ -17,9 +18,17 @@ class SubscriptionController extends Controller
 }
 
 
-    public function subscribe($id)
+    public function subscribe(Request $request, $id)
     {
         $plan = SubscriptionPlan::findOrFail($id);
+        session(['selected_plan' => $plan]);
+
+        if (Auth::check()) {
+            $paymentgatewayURL="#";
+            return redirect()->away($paymentgatewayURL . '?cost=' . $plan->anual_cost);
+        } else {
+            return redirect()->route('login');
+        }
 
         session(['selected_plan' => $plan]);
 
