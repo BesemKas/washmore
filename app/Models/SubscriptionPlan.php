@@ -12,7 +12,7 @@ class SubscriptionPlan extends Model
     protected $fillable = [
         'name',
         'description',
-        'anual_cost',
+        'plan_price',
         'garage_slots',
         'shop_discount',
         'service_discount',
@@ -22,6 +22,11 @@ class SubscriptionPlan extends Model
     public function Subscription()
     {
         return $this->hasMany(Subscription::class);
+    }
+
+    public function orderItems()
+    {
+        return $this->morphToMany(OrderItem::class, 'orderable');
     }
 
 

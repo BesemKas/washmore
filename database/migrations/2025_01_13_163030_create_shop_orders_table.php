@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('shop_orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained();
-            $table->string('status')->default('pending');
-            $table->timestamp('order_date');
+            $table->string('order_type');
             $table->decimal('total', 10, 2);
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }

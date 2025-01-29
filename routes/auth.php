@@ -59,4 +59,6 @@ Route::middleware('auth')->group(function () {
         ->name('logout');
 
     Route::post('/subscribe/{id}', [SubscriptionController::class, 'subscribe'])->name('subscribe');
+    
+    
 });

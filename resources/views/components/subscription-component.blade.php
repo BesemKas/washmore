@@ -3,7 +3,7 @@
     <h3 class="mb-4 text-2xl font-semibold">{{ $planToShow->name }}</h3>
     <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">{{$planToShow->description}}</p>
     <div class="flex justify-center items-baseline my-8">
-        <span class="mr-2 text-5xl font-extrabold">R {{ $planToShow->anual_cost }}</span>
+        <span class="mr-2 text-5xl font-extrabold">R {{ $planToShow->plan_price }}</span>
         <span class="text-gray-500 dark:text-gray-400">/year</span>
     </div>
     <!-- List -->
@@ -65,7 +65,7 @@
             <span>Free updates: <span class="font-semibold">6 months</span></span>
         </li>
     </ul>
-    <form action="{{ route('subscribe', $planToShow->id) }}" method="POST">
+    <form action="{{ route('subscribe', $planToShow->id) }}" method="post">
         @csrf
         <x-Primary-button class="w-full">Subscribe</x-Primary-button>
     </form>

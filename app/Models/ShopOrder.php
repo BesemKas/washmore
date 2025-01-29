@@ -11,9 +11,9 @@ class ShopOrder extends Model
     
     protected $fillable = [
         'user_id',
-        'order_date',
         'status',
-        'order_total',
+        'order_type',
+        'total',
     ];
 
     public function user()

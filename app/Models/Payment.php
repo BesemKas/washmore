@@ -14,8 +14,11 @@ class Payment extends Model
         'user_id',
         'payable_id',
         'status',
-        'date_created',
         'amount',
+        'payment_key',
+        'merchant_reference',
+        'transaction_id',
+
         
     ];
 
@@ -24,12 +27,9 @@ class Payment extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function paymentType()
-    {
-        return $this->belongsTo(PaymentType::class);
-    }
 
-    public function payable()
+
+    public function payables()
     {
         return $this->morphTo();
     }

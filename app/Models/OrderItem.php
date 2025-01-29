@@ -11,7 +11,7 @@ class OrderItem extends Model
     protected $fillable = 
     [
         'shop_order_id',
-        'product_id',
+        'orderable_id',
         'quantity',
     ];
 
@@ -20,8 +20,9 @@ class OrderItem extends Model
         return $this->belongsTo(ShopOrder::class);
     }
 
-    public function product()
+    public function orderable()
     {
-        return $this->belongsTo(Product::class);
+        return $this->morphTo();
     }
+
 }

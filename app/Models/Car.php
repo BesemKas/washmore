@@ -10,7 +10,7 @@ class Car extends Model
 {
 
     use HasFactory;
-    protected $fillable = ['subscription_id','brand', 'model', 'color', 'reg_number', 'date_added'];
+    protected $fillable = ['subscription_id','brand', 'model', 'color', 'reg_number'];
 
     public function subscription()
     {

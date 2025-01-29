@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->integer('garage_slots')->nullable();
-            $table->decimal('anual_cost', 7, 2);
+            $table->decimal('plan_price', 7, 2);
             $table->integer('shop_discount')->nullable();
             $table->integer('service_discount')->nullable(); 
 

@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('model');
             $table->string('color');
             $table->string('reg_number');
-            $table->timestamp('date_added');
             $table->timestamps();
         });
     }

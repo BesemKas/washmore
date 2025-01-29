@@ -14,10 +14,12 @@ return new class extends Migration
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
-            $table->decimal('amount', 10, 2);
-            $table->string('status');
             $table->unsignedBigInteger('payable_id');
-            $table->timestamp('date_created');
+            $table->decimal('amount', 10, 2);
+            $table->string('status')->default('pending');
+            $table->string('payment_key');
+            $table->string('merchant_reference');
+            $table->string('transaction_id');
             $table->timestamps();
         });
     }
