@@ -67,7 +67,7 @@
     </ul>
     <form action="{{ route('subscribe', $planToShow->id) }}" method="post">
         @csrf
-        <x-Primary-button class="w-full">Subscribe</x-Primary-button>
+        <x-primary-button class="w-full">Subscribe</x-primary-button>
     </form>
     
 </div>
